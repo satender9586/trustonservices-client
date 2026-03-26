@@ -4,7 +4,7 @@ import { IoMdMenu, IoMdClose } from "react-icons/io";
 import Logo from "../../assets/Logo/Logo2.png";
 import Image from "next/image";
 import Link from "next/link";
-import { NAVBAR_TABS } from "@/app/constant/tabs.jsx";
+import { NAVBAR_TABS } from "@/constant/tabs";
 
 const Navbar = () => {
   const [hasScrolled, setHasScrolled] = useState(false);
@@ -26,7 +26,7 @@ const Navbar = () => {
         hasScrolled ? "shadow-md" : ""
       }`}
     >
-      <div className="max-w-7xl mx-auto px-2 md:px-4 xl:px-0 h-16 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-2 md:px-4 xl:px-0 h-15 flex items-center justify-between">
         <Link href={"/"}>
           <div className="flex items-center gap-1">
             <Image
