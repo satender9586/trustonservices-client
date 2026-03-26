@@ -1,14 +1,16 @@
 import React from 'react'
-import Navbar from '@/app/components/layout/Navbar'
+import Navbar from '@/components/layout/Navbar'
+import Footer from '@/components/layout/Footer'
 import HeroSection from './components/HeroSection'
-import Footer from '@/app/components/layout/Footer'
+import Faq from '@/components/layout/Faq'
 
 
 const Landing = () => {
   return (
     <>
         <Navbar/>
-        <HeroSection/>
+        {/* <HeroSection/> */}
+        <Faq/>
         <Footer/>
     </>
   )
