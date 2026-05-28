@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f7f4ef;
+  --foreground: #181818;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+a,
+button,
+input,
+select {
+  font: inherit;
+}
+
+.service-visual {
+  background:
+    radial-gradient(circle at 32% 28%, rgba(255, 255, 255, 0.92) 0 10%, transparent 10.4%),
+    radial-gradient(circle at 67% 34%, rgba(255, 255, 255, 0.88) 0 8%, transparent 8.4%),
+    radial-gradient(circle at 52% 62%, rgba(255, 255, 255, 0.9) 0 14%, transparent 14.4%),
+    linear-gradient(135deg, rgba(24, 24, 24, 0.08), rgba(24, 24, 24, 0)),
+    linear-gradient(160deg, #d8e6e0 0%, #f1d1b8 48%, #d9d0f0 100%);
+}
+
+.service-visual::before,
+.service-visual::after {
+  content: "";
+  position: absolute;
+  border-radius: 8px;
+  background: rgba(24, 24, 24, 0.72);
+  box-shadow: 0 22px 50px rgba(0, 0, 0, 0.16);
+}
+
+.service-visual::before {
+  width: 38%;
+  height: 22%;
+  right: 10%;
+  top: 17%;
+  transform: rotate(7deg);
+}
+
+.service-visual::after {
+  width: 48%;
+  height: 26%;
+  left: 13%;
+  bottom: 31%;
+  transform: rotate(-6deg);
+}
